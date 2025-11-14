@@ -1,0 +1,1 @@
+ASAP is a web-first marketplace platform designed to connect Clients with thoroughly vetted and trusted Trade Professionals (Artisans) across Canada for real estate services, renovations, and maintenance jobs. Our platform streamlines the hiring process through AI-powered matching, competitive bidding, secure escrow payments, and transparent review systems.
