@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /* CRITICAL FIX: Global Box-Sizing Reset */
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box; 
+  }
+
+  body {
+    color: black;
+  }
+}
+
+* {
+  font-family: "Work Sans", sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+
+.logo {
+  font-family: "Sriracha", cursive;
+  font-weight: bolder;
+  font-style: normal;
+}
+
+
+/* ---------------------------------------------------------------------- */
+/* 💡 NEW: Custom Scrollbar Design (Webkit - Chrome, Safari) */
+/* ---------------------------------------------------------------------- */
+@layer utilities {
+    /* Style the scrollbar itself (the track + thumb) */
+    .custom-scroll::-webkit-scrollbar {
+        width: 4px; /* For vertical scrollbars */
+        height: 4px; /* For horizontal scrollbars */
+    }
+
+    /* Style the track (the area the thumb moves along) */
+    .custom-scroll::-webkit-scrollbar-track {
+        background: #f1f1f1; /* Light gray background */
+        border-radius: 10px;
+    }
+
+    /* Style the thumb (the draggable handle) */
+    .custom-scroll::-webkit-scrollbar-thumb {
+        background: #a1a1a1; /* Medium gray color */
+        border-radius: 10px;
+    }
+
+    /* Style the thumb when hovering */
+    .custom-scroll::-webkit-scrollbar-thumb:hover {
+        background: #888; /* Darker gray on hover */
+    }
+
+    /* ---------------------------------------------------------------------- */
+    /* NEW: Custom Scrollbar Design (Firefox) */
+    /* ---------------------------------------------------------------------- */
+    /* Firefox uses a standard CSS property */
+    .custom-scroll {
+        scrollbar-width: thin; /* 'auto' or 'thin' */
+        scrollbar-color: #175891 #f1f1f1; /* thumb color | track color */
+    }
+}
